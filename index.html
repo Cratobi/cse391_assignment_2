@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Assignment 2</title>
+
+  <link rel="stylesheet" href="./css/normalize.css">
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body onload="quoteChanger(['red', 'green', 'blue', 'yellow'][Math.floor(Math.random() * 4)])">
+  <main>
+    <section class='card'>
+      <h2>Quote Box</h2>
+      <div class="quote-container">
+        <div id="quote-box" class="quote red">
+          <p id="quote"></p>
+          <p id="quote-author"></p>
+        </div>
+
+        <div class="ctl-container">
+          <div>
+            <button class="btn-ctl red" onclick='quoteChanger("red")'></button>
+            <button class="btn-ctl blue" onclick='quoteChanger("blue")'></button>
+          </div>
+          <div>
+            <button class="btn-ctl green" onclick='quoteChanger("green")'></button>
+            <button class="btn-ctl yellow" onclick='quoteChanger("yellow")'></button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class='card'>
+      <h2>Hero Converter</h2>
+
+      <input id='converter-input' type="number" name='input' placeholder='Enter Weight' onkeyup='heroConverter()' />
+      <select id='converter-option' name='unit' onchange='heroConverter()'>
+        <option value='lb_kg'>lb to kg</option>
+        <option value='kg_lb'>kg to lb</option>
+      </select>
+
+      <div id="converter-result">
+        ...
+      </div>
+    </section>
+    <section class='card'>
+      <h2>Max, Min, Sum, Average & Reverse</h2>
+
+      <input id='series-input' type="text" name='input' placeholder='Enter Weight' onkeyup='seriesProcessor()' />
+
+      max: <div id="series-max"></div>
+      min: <div id="series-min"></div>
+      sum: <div id="series-sum"></div>
+      avg: <div id="series-avg"></div>
+      rev: <div id="series-rev"></div>
+    </section>
+    <section class='card'>
+      <h2>Magic!</h2>
+
+      <textarea name="magicbox" id="magic-box" cols="30" rows="10" data-caps='upper'>
+a
+b
+
+
+
+  c
+
+d
+e
+      </textarea>
+      <button onclick='magicClear()'>Clear it</button>
+      <button onclick='magicCapitalize()'>Capitalize</button>
+      <button onclick='magicSort()'>Sort</button>
+      <button onclick='magicReverse()'>Reverse</button>
+      <button onclick='magicStrip()'>Strip Blank</button>
+      <button onclick='magicAdd()'>Add Numbers</button>
+      <button onclick='magicShuffle()'>Shuffle</button>
+    </section>
+  </main>
+  <script src='./js/main.js' />
+</body>
+
+</html>

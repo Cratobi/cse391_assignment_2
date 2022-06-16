@@ -1,0 +1,108 @@
+html {
+  font-size: 62.5%;
+}
+body {
+  background-color: #d3ceb9;
+  color: #161616;
+  min-width: 100vw;
+
+  font-size: 2rem;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 65rem;
+  margin: 5rem auto;
+  padding: 3.5rem;
+
+  background-color: #f3f1e8;
+  border-radius: 0.8rem;
+
+  box-shadow: 0 0.1rem 0.8rem #0505051f, 0 0.2rem 1.2rem #0505050a;
+}
+/* Quote */
+.quote-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 3.5rem;
+  gap: 1rem;
+  margin-inline: auto;
+
+  margin-left: -1.5rem;
+}
+.quote-container .quote {
+  width: 100%;
+  padding: 1.5rem;
+  border-radius: 1.2em;
+  font-size: 1.6rem;
+  background-color: #e7dbc1;
+  border: 0.4rem solid #af9d74;
+
+  box-shadow: 0 0.1rem 0.4rem #0505050e;
+}
+.quote.red {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: #d6b670;
+  border-color: #d6b670;
+  background-color: #ce3939;
+}
+
+.quote.blue {
+  font-family: 'Times New Roman', Times, serif;
+  color: #c3c0e7;
+  border-color: #c3c0e7;
+  background-color: #4185d3;
+}
+
+.quote.green {
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  color: #6e4f77;
+  border-color: #6e4f77;
+  background-color: #33d677;
+}
+
+.quote.yellow {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: #08350b;
+  border-color: #08350b;
+  background-color: #c8ca46;
+}
+
+/* Controller */
+
+.ctl-container {
+  width: fit-content;
+}
+.btn-ctl {
+  width: 2.5rem;
+  height: 2.5rem;
+
+  border-width: 0;
+  border-radius: 0.6rem;
+
+  box-shadow: 0 0 0.1rem #16161633, 0 0.1rem 0.2rem rgba(22, 22, 22, 0.082);
+
+  transition: box-shadow 100ms, transform 100ms;
+}
+.btn-ctl:hover {
+  box-shadow: 0 0.1rem 0.3rem #1616161c, 0 0.1rem 0.6rem #16161610;
+  transform: scale(105%);
+}
+
+.btn-ctl.red {
+  background-color: #ce3939;
+}
+
+.btn-ctl.blue {
+  background-color: #4185d3;
+}
+
+.btn-ctl.green {
+  background-color: #33d677;
+}
+
+.btn-ctl.yellow {
+  background-color: #c8ca46;
+}
